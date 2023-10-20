@@ -1,0 +1,31 @@
+import java.util.*;
+public class CodeSoftTask1 {
+    public static void main(String args[]) {
+        int min = 1;
+        int max = 10;
+        int guessNumber;
+        double randomDouble = Math.random();
+        int randomNumber = (int) (randomDouble * (max - min)) + min;
+        Scanner sc = new Scanner(System.in);
+        int numberAttempts;
+        int i=1;
+        System.out.println("Enter how many attempts you want to give");
+        numberAttempts=sc.nextInt();
+        while ( i<= numberAttempts)
+        {
+            System.out.println("Enter the Number");
+            guessNumber=sc.nextInt();
+            if (guessNumber == randomNumber) {
+                System.out.println("You have Guess Correct Number ");
+                i=numberAttempts+1;
+            } else if (guessNumber > randomNumber) {
+                System.out.println("Too High");
+            } else if (guessNumber < randomNumber) {
+                System.out.println("Too Low");
+            } else {
+                System.out.println("Entered Number is not between 1 to 100");
+            }
+            i++;
+        }
+    }
+}
