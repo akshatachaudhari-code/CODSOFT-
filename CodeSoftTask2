@@ -21,8 +21,8 @@ public class CodeSoftTask2 {
         } else {
             totalMarks = Java + advanceJava + dataAnalytics + compilerConstruction;
             averagePercentage = totalMarks / 4;
-            System.out.println(totalMarks);
-            System.out.println(averagePercentage);
+            System.out.println("Total Marks"+totalMarks);
+            System.out.println("Average Percentage"+averagePercentage);
             if (averagePercentage > 90) {
                 System.out.println("Grade A+");
             } else if (80 < averagePercentage && averagePercentage < 90) {
